@@ -69,7 +69,7 @@ st.set_page_config("Weather Predictor", layout="centered")
 st.title("🌦️ Weather Predictor App")
 
 city = st.text_input("Enter a city name:", value="Karachi")
-file_path = st.text_input("Enter full path to historical weather CSV file:", value="weather.csv")
+file_path = r"C:\Users\Srushti\Downloads\weather.csv"
 
 if city and file_path:
     try:
