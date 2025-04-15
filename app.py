@@ -44,9 +44,9 @@ def train_regression_models(X, y):
 
     models = {
         "RandomForest": RandomForestRegressor(n_estimators=100, random_state=42),
-        "LinearRegression": LinearRegression(),
-        "GradientBoosting": GradientBoostingRegressor(n_estimators=100, random_state=42),
-        "SVR": SVR(kernel='rbf')
+        "LinearRegression": LinearRegression()
+        # "GradientBoosting": GradientBoostingRegressor(n_estimators=100, random_state=42),
+        # "SVR": SVR(kernel='rbf')
     }
 
     trained_models = {}
