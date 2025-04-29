@@ -123,12 +123,13 @@ def main():
     st.title("🌤️ Weather Prediction App")
 
     city = st.text_input("Enter a city name", "Mumbai")
-    historical_data = read_historical_data(r'cleaned_data.csv')
+
+    # Read the historical data
+    historical_data = read_historical_data('cleaned_data.csv')
 
     if city:
         try:
             current_weather = get_current_weather(city)
-            historical_data = read_historical_data(historical_data)
 
             # Prepare data
             X_temp, y_temp = prepare_regression_data(historical_data, 'Temp')
