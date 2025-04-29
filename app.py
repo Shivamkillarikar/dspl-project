@@ -125,7 +125,7 @@ def main():
     city = st.text_input("Enter a city name", "Mumbai")
     historical_data = read_historical_data(r'cleaned_data.csv')
 
-    if city and file_uploaded:
+    if city:
         try:
             current_weather = get_current_weather(city)
             historical_data = read_historical_data(file_uploaded)
