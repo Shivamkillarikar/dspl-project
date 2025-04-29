@@ -44,7 +44,7 @@ def train_regression_models(X, y):
 
     models = {
         "RandomForest": RandomForestRegressor(n_estimators=100, random_state=42),
-        "LinearRegression": LinearRegression()
+        "LinearRegression": LinearRegression(),
         "SVR": SVR(kernel='rbf')
     }
 
