@@ -122,8 +122,8 @@ def plot_actual_vs_predicted(models, X_test, y_test, title):
 def main():
     st.title("🌤️ Weather Prediction App")
 
-    city = st.text_input("Enter a city name", "Karachi")
-    file_uploaded = st.file_uploader("Upload historical weather CSV file", type=['csv'])
+    city = st.text_input("Enter a city name", "Mumbai")
+    historical_data = read_historical_data(r'cleaned_data.csv')
 
     if city and file_uploaded:
         try:
