@@ -128,7 +128,7 @@ def main():
     if city:
         try:
             current_weather = get_current_weather(city)
-            historical_data = read_historical_data(file_uploaded)
+            historical_data = read_historical_data(historical_data)
 
             # Prepare data
             X_temp, y_temp = prepare_regression_data(historical_data, 'Temp')
